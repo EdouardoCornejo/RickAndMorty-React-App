@@ -1,3 +1,3 @@
-import { characters } from "./characters";
+import { apiCharacters } from "./characters";
 
-export { characters };
+export { apiCharacters };
