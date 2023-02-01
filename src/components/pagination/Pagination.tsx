@@ -1,10 +1,10 @@
 import { FC } from "react";
 
 interface PaginationProps {
-  prev: string | undefined
-  onPrevious: any;
-  next:  string | undefined
-  onNext: any;
+  prev: string | undefined;
+  onPrevious: () => void;
+  next: string | undefined;
+  onNext: () => void;
 }
 
 export const Pagination: FC<PaginationProps> = ({
@@ -22,7 +22,7 @@ export const Pagination: FC<PaginationProps> = ({
 
   return (
     <div className="container">
-      <nav>
+      <nav className="my-5">
         <ul className="pagination justify-content-center">
           {prev ? (
             <li className="page-item">
