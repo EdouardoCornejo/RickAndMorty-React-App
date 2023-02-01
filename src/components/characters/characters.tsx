@@ -8,7 +8,7 @@ interface CharactersProps {
 
 export const Characters: FC<CharactersProps> = ({ characters }) => {
   return (
-    <div className="containter mt-5">
+    <div className="container">
       <div className="row">
         <div className="col">
           <Character characters={characters} />
